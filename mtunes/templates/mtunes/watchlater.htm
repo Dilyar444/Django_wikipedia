@@ -3,10 +3,10 @@
 
 {% block body %}
 {% load static %} 
-<h1 style="color: rgb(158, 60, 60); text-align: center;">Watch Later</h1>
+<h1 style="color: rgb(158, 60, 60); text-align: center;">Очередь</h1>
 
 {% if song|length < 1 %}
-        <h3 style="text-align: center; padding-top: 5%;">You have no Video in your Watch Later</h3>
+        <h3 style="text-align: center; padding-top: 5%;">У вас нет песен добавленные в очередь</h3>
 {% endif %}
 
 <div class="container">
@@ -21,7 +21,7 @@
           <h5 class="card-title" style="color: green; font-weight: 550;">{{i.name}}</h5>
           <p class="card-text">Tags: {{i.tags}}</p>
         <p class="card-text">Movie: {{i.movie}}</p>
-          <a href="/mtunes/songs/{{i.song_id}}"><button class="btn btn-outline-danger">Listen Song</button></a>
+          <a href="/mtunes/songs/{{i.song_id}}"><button class="btn btn-outline-danger">Слушать Песню</button></a>
         </div>
       </div>
     </div>

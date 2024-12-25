@@ -33,9 +33,9 @@
             <div class="row">
             <form action="/mtunes/watchlater" method="POST">{% csrf_token %}
             <input type="hidden" name="video_id" value="{{song.song_id}}">
-            <button type="submit" class="btn btn-outline-danger">Add to WatchLater</button>
+            <button type="submit" class="btn btn-outline-danger">Добавить в очередь</button>
             </form>
-            <a href="/media/{{song.song}}" download><button class="btn btn-outline-danger">Download Song</button></a>
+            <a href="/media/{{song.song}}" download><button class="btn btn-outline-danger">Скачать Песню</button></a>
             </div>
         </div>
     

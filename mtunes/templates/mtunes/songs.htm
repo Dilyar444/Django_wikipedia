@@ -19,10 +19,10 @@
           {% if user.is_authenticated %}
           <form action="/mtunes/history" method="POST">{% csrf_token %}
             <input type="hidden" name="music_id" value="{{i.song_id}}">
-            <a href="/mtunes/songs/{{i.song_id}}"><button class="btn btn-outline-danger">Listen Song</button></a>
+            <a href="/mtunes/songs/{{i.song_id}}"><button class="btn btn-outline-danger">Слушать Песню</button></a>
           </form>
           {% else %}
-          <a href="/mtunes/songs/{{i.song_id}}"><button class="btn btn-outline-danger">Listen Song</button></a>
+          <a href="/mtunes/songs/{{i.song_id}}"><button class="btn btn-outline-danger">Слушать Песню</button></a>
           {% endif %}
           </div>
         </div>

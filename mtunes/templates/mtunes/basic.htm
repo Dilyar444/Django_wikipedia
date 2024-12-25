@@ -13,7 +13,7 @@
   <body>
     {%load static%}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">MTUNES</a>
+        <a class="navbar-brand" href="/">Music_Wikipedia</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,26 +21,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/mtunes/songs">All songs</a>
+              <a class="nav-link" href="/mtunes/songs">Все Песни</a>
             </li>
         
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
           </form>
         </div>
         {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto"></ul>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome {{request.user}}</a>
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Добро пожаловать {{request.user}}</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" onclick="logout()">Logout</a>
-                      <a class="dropdown-item" href="/mtunes/history">History</a>
-                      <a class="dropdown-item" href="/mtunes/watchlater">Watch Later</a>
+                      <a class="dropdown-item" onclick="logout()">Выйти</a>
+                      <a class="dropdown-item" href="/mtunes/history">История</a>
+                      <a class="dropdown-item" href="/mtunes/watchlater">Очередь</a>
                     </div>
                   </li>
                 </ul>

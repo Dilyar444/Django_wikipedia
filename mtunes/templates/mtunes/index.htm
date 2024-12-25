@@ -1,5 +1,5 @@
 {%extends 'mtunes/basic.htm'%}
-{% block title%}Mtunes{% endblock %}
+{% block title%}Music_Wikipedia{% endblock %}
 
 {% block body %}
   {% load static %}
@@ -18,7 +18,7 @@
       </div>
 
       <!-- #####################################################CARDS############################################################## -->
-      <h2 style = "padding-left: 8%; padding-top: 2%; font-family: 'Verdana';">Trending songs</h2>
+      <h2 style = "padding-left: 8%; padding-top: 2%; font-family: 'Verdana';">Тренды</h2>
       
       <div class="row" style="padding-top: 2%; padding-left: 7%;">
       {%for i in song %}
@@ -28,7 +28,7 @@
         <div class="card-body">
           <h5 class="card-title">{{i.name}}</h5>
           <p class="card-text">{{i.tags}}</p>
-          <a href="/mtunes/songs/{{i.song_id}}" class="btn btn-outline-danger">Listen Song</a>
+          <a href="/mtunes/songs/{{i.song_id}}" class="btn btn-outline-danger">Слушать Песню</a>
         </div>
       </div>
       </div>
@@ -39,7 +39,7 @@
 
 
       
-      <h2 style = "padding-left: 8%; padding-top: 2%; font-family: 'Verdana';">Your Liked Songs</h2>
+      <h2 style = "padding-left: 8%; padding-top: 2%; font-family: 'Verdana';">Для Вас</h2>
       <div class="row" style="padding-top: 2%; padding-left: 7%;">
 
       <div style = "padding-left: 2%; padding-bottom: 3%;">
@@ -48,7 +48,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a href="#" class="btn btn-primary">Слушать</a>
         </div>
       </div>
       </div>
@@ -59,7 +59,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a href="#" class="btn btn-primary">Слушать</a>
         </div>
       </div>
       </div>
@@ -70,7 +70,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Listen</a>
+            <a href="#" class="btn btn-primary">Слушать</a>
           </div>
         </div>
         </div>
@@ -81,7 +81,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a href="#" class="btn btn-primary">Слушать</a>
         </div>
       </div>
       </div>
